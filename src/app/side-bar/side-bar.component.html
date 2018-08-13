@@ -37,6 +37,9 @@
         </div>
   </mat-drawer>
 
-  <app-selected-metrics (metricClicked)="viewSideNav($event)"></app-selected-metrics>
+  <div class="matTab">
+    <categories-list></categories-list>
+    <app-selected-metrics (metricClicked)="viewSideNav($event)"></app-selected-metrics>
+  </div>
 
 </mat-drawer-container>

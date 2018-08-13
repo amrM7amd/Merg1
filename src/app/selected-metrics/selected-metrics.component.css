@@ -1,3 +1,15 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
 
 .selected-metrics-count {
     font-family: Poppins Latin;
@@ -9,10 +21,6 @@
 
 
 .general-control {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin: 24px 0 16px 0;
 }
 
@@ -23,9 +31,6 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     padding: 19px 19px 11px 19px;
     margin: 0; 
 }
@@ -33,13 +38,6 @@
 .selected-metrics-container {
     height: auto;
 } 
-
-.left-control {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .selection-icon mat-icon {
     padding: 0;
@@ -63,10 +61,6 @@
 }
 
 .selected-metric {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;     
     height: 40px;
     padding: 9px 9px 9px 15px;
     border-radius: 2px;
@@ -76,25 +70,10 @@
 }
 
 .body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width:95%;
 }
 
-.metric-control {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;        
-}
-
 .metric-labeling {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin-left: auto;
     margin-right: 35px;     
     color: #717171;

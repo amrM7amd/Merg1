@@ -14,6 +14,7 @@ import { SelectedMetricOptionsMenuComponent } from './selected-metric-options-me
 import { SelectedMetricsStore } from './common/selected-metrics.store';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CategoriesListComponent } from './categories-list/categories-list.compo
     SelectedMetricsSelectionMenuComponent,
     SelectedMetricOptionsMenuComponent,
     SideBarComponent,
-    CategoriesListComponent
+    CategoriesListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { CategoriesListComponent } from './categories-list/categories-list.compo
     MaterialModule,
     HttpClientModule,
     RouterModule.forRoot([
-      
+      {path: 'selected-metrics', component: SideBarComponent},
+      {path: 'filtered-conditions', component: SideBarComponent}
     ])
   ],
   providers: [

@@ -1,0 +1,114 @@
+
+.cont {
+  position: static;
+}
+.sidenav
+{
+background-color:  #0049b0;
+height: 100%;
+color: #ffffff;
+width: 20%;
+
+}
+.sidenav h1{
+  height: 16px;
+  font-family: Poppins Latin;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.81;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  margin: 12px 25px 30px 42px;
+}
+
+div > ul{
+  list-style: none;
+  padding-left: 9%;
+  line-height: 2.5
+}
+ul{
+  list-style: none
+}
+.sidenav a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 0.07;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 7%;
+}
+
+
+.logo {
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.81;
+  letter-spacing: 0.7px;
+  text-align: right;
+  color: #0049b0;
+}
+.segment > ul{
+  margin: 0;
+  padding: 0;
+}
+
+.btnmenu{
+  padding-top: 2px;
+  cursor: pointer;
+  color: #41516f;
+}
+.segment{
+  margin-top: 7%;
+margin-left: 12%;
+opacity: 0.7;
+font-family: Poppins Latin;
+font-size: 12px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 2.58;
+letter-spacing: normal;
+text-align: left;
+color: #ffffff;
+color: var(--white);
+}
+
+span{
+  margin-left: 2%;
+}
+.icon{
+  margin-left: 1%
+}
+
+
+.menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+  background-color: white;
+  padding-left: 2%;
+}
+
+.menu-header .btnmenu {
+  margin-left: 3%;
+  margin-right: auto;
+}
+ p {
+   margin: 0;
+ }
+
+ .segmentations-list {
+   display: flex;
+   flex-direction: column;
+ }

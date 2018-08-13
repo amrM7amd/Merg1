@@ -4,10 +4,19 @@
     width: 100%;
 }
 
+.mat-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f4f5f7;
+    margin-left: 0;
+}
+
 .matTab app-side-bar {
     width: 80%;
 }
     
-.matTab app-metrices {
+.matTab categories-list {
     width: 20%;
 }

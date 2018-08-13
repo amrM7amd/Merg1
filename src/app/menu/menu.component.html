@@ -1,0 +1,88 @@
+<mat-sidenav-container class="cont">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav">
+    <h1>LAGORTA</h1>
+    <div>
+      <ul class="menulist">
+        <li>
+          <a href="#">
+            <mat-icon>home</mat-icon>
+            <span>My Dashboard </span>
+          </a>
+        </li>
+        <li class="segmentations-list">
+          <a (click)="toggle()" href="#">
+            <mat-icon>home</mat-icon>
+            <span > Segmentation </span>
+          </a>
+          <div class=" segment" *ngIf="show" >
+          <ul  *ngFor="let segment of segments" >
+            <li>
+              <a href="#">{{ segment.name}}</a>
+            </li>
+
+          </ul>
+        </div>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span>Analytics </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span> Engagements </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span> Integration </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span>Metrics area </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span>Admin area </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span> Settings </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <mat-icon>search</mat-icon>
+            <span> Help </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
+
+
+  </mat-sidenav>
+
+  <mat-sidenav-content class="header">
+    <div class="menu-header">
+      <div class="logo" *ngIf="!opened">
+        <p>LAGORTA</p>
+      </div>
+      <div class="btnmenu" [ngClass]="{btnmenu :!opened} ">
+          <mat-icon (click)="sidenav.toggle()">apps</mat-icon>
+      </div>
+    </div>
+    <app-tabs></app-tabs>
+  </mat-sidenav-content>
+</mat-sidenav-container>
