@@ -1,0 +1,19 @@
+<button mat-icon-button 
+  disableRipple
+  class="selection-icon" 
+  [matMenuTriggerFor]="menu">
+  Selection
+  <mat-icon *ngIf="!selectionExpanded">expand_more</mat-icon>
+  <mat-icon *ngIf="selectionExpanded">expand_less</mat-icon>
+</button>
+<mat-menu 
+  #menu="matMenu" 
+  yPosition="below"
+  [overlapTrigger]="false">
+  <button mat-menu-item
+  *ngFor="let item of items"
+  (click)="onItemClicked(item)">
+    <mat-icon>{{item.iconName}}</mat-icon>
+    <span>{{item.name}}</span>
+  </button>
+</mat-menu>

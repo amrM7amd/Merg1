@@ -1,0 +1,51 @@
+<Div class="container" (dragover)="allowDrop($event)" (drop)="drop($event)">
+  <div class="content">
+    <p class="header">Selected metrics</p>
+    <div class="general-control">
+      <div class="left-control">
+        <label class="selected-metrics-count"> {{ metrics.length }} Metrics selected</label>
+        <div class="selection">
+            <selected-metrics-selection-menu></selected-metrics-selection-menu>
+        </div>
+      </div>
+      <a class="right-control"
+      (click)="removeAll()">
+      Remove all
+    </a>
+    </div>
+    <div class="selected-metrics-container">
+      <mat-card class="selected-metric" 
+      *ngFor="let metric of metrics" 
+      (mouseenter)="onHover(metric.id)" (mouseleave)="onLeave()"
+        [@elevate]="metric.id == hoveredId ? 'hovered' : '*'">
+        <div class="body" (click)="openSideBar(metric)">
+          <label class="name">{{metric.name}}</label>
+          <div class="metric-labeling" *ngIf="metric.id != hoveredId">
+            <mat-icon>local_offer</mat-icon>
+            <p>some labeling here</p>
+          </div>
+          <div class="metric-labeling delete" *ngIf="metric.id == hoveredId">
+            <button mat-button 
+            class="remove-btn"
+            (click)="removeMetric(metric)">
+                <mat-icon>delete_forever</mat-icon>
+                Remove
+            </button>
+          </div>
+        </div>
+        <div class="selection">
+            <selected-metric-options-menu></selected-metric-options-menu>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <div class="show-sample-div">
+    <button mat-raised-button primary
+          class="show-sample"
+          [routerLink]="['/dashboard', 'raw']" 
+          [queryParams]="{metrics: metrics}">
+          Show data sample
+          <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+</Div>

@@ -1,0 +1,13 @@
+.matTab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.matTab app-side-bar {
+    width: 80%;
+}
+    
+.matTab app-metrices {
+    width: 20%;
+}

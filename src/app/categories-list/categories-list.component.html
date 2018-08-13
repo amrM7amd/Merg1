@@ -1,0 +1,45 @@
+<mat-card>
+  
+     <div>
+       <div class="my-header"> <strong>Matrics</strong></div>
+       <small class="matris-info">{{categoriesSize}} Categories {{MatricesSize}} Matrics</small>
+       <br>
+       <br>
+     </div>
+     <mat-form-field
+     [ngStyle]="{
+      'background':'rgb(245, 245, 245)'
+      }">
+       
+        <span matPrefix> <mat-icon>search</mat-icon> &nbsp;</span>
+        <span *ngIf="Num_of_Found>0" class="found" matSuffix> found {{Num_of_Found}} </span>
+
+        <input matInput placeholder="All Categories"
+         #word 
+         (input)="filter_matrices(word.value)"
+        >
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-expansion-panel  *ngFor="let category of Array_categories index as i"  [expanded]="Is_category_Expand[i]">
+      <mat-expansion-panel-header>
+        <mat-panel-title [matTooltip]="category.description">
+          {{category.name }} 
+        </mat-panel-title>
+  
+      </mat-expansion-panel-header>
+
+      <mat-list *ngFor="let metric of category.metric" >
+        <mat-list-item class="item_list"
+        draggable="true"
+        (dragstart)="drag($event, metric)"
+        [id]="metric.id"
+        [ngStyle]="{
+          'color' :metric.name.search(word.value)!=-1 && word.value.length>=1 ? 'blue': 'black'
+        }"
+        
+        [matTooltip]="metric.description" >{{metric.name }} </mat-list-item>
+      </mat-list>
+
+    </mat-expansion-panel>
+</mat-card>

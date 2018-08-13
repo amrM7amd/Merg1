@@ -1,0 +1,165 @@
+
+.selected-metrics-count {
+    font-family: Poppins Latin;
+    font-size: 16px;
+    height: 16px;
+    font-weight: 500;
+    color: #717171;
+}
+
+
+.general-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 16px 0;
+}
+
+.container {
+    background-color: #f8f8f8;
+    min-height:100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 19px 19px 11px 19px;
+    margin: 0; 
+}
+
+.selected-metrics-container {
+    height: auto;
+} 
+
+.left-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selection-icon mat-icon {
+    padding: 0;
+    margin: 0;
+}
+
+
+.selection {
+    width: 5%;
+}
+
+.right-control {
+    color: #5d6c85;
+    text-align: center;
+}
+
+.mat-icon-button {
+    width: auto;
+    height: auto;
+    line-height: 0;
+}
+
+.selected-metric {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;     
+    height: 40px;
+    padding: 9px 9px 9px 15px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    margin-bottom: 15px;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:95%;
+}
+
+.metric-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;        
+}
+
+.metric-labeling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 35px;     
+    color: #717171;
+    font-family: Poppins Latin;
+    font-weight: normal;
+}
+
+.metric-labeling mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.metric-labeling p {
+    margin: 0;
+}   
+
+.metric-labeling mat-icon{
+    margin-right: 20px; 
+}
+
+.delete mat-icon, .delete p {
+    color: #ff2c00;
+    font-weight: normal;
+}
+
+
+.remove-btn {
+    color: red; 
+}
+
+.name {
+    font-family: Poppins Latin;
+    color: #5d6c85;
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.show-sample {
+    position: fixed;
+    bottom: 13px; 
+    right: 23px;
+    height: 42px;
+    border-radius: 24px;
+    font-family: Poppins Latin;
+    color: white;
+    background-color: #0049b0;
+}
+
+.show-sample-div {
+    background-color: #f8f8f8;
+}
+
+.show-sample mat-icon {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 6px;
+}
+
+.header {
+    font-size: 20px;
+    font-family: Poppins Latin;
+    color: #162a4e;
+    font-weight: normal;
+}

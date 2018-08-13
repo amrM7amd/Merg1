@@ -1,0 +1,42 @@
+<mat-drawer-container #cont class="example-container" autosize>
+  <mat-drawer
+    #drawer 
+    class="example-sidenav" 
+    mode="over"
+    position="end">
+      <div class='sideBarContainer'>
+          <div class="header">
+            <div class="faCloseContainer" (click)='drawer.toggle()'>
+              <i class="fa fa-close"></i>
+            </div>
+            <h2>Overview</h2>
+          </div>
+          <hr>
+          <h3>Activation Tenure Tiers</h3>
+          <h4>Business Desciption</h4>
+          <p>Subsciber activation Month on the network grouped in tiers</p>
+          <h4>Sample of data</h4>
+          <hr>
+          <h4>Running data</h4>
+          <hr>
+          <ul>
+            <li>Jan</li>
+            <li>Feb</li>
+            <li>March</li>
+            </ul>
+          <hr>
+          <p>Data Type & Technical description</p>
+          <p>Month in tiers ( some description here )</p>
+          
+          <h4>Notes</h4>
+          <ul>
+            <li>  This is the first note  </li>
+            <li>  This is the second note  </li>
+            <li>  This is the third note  </li>
+          </ul>
+        </div>
+  </mat-drawer>
+
+  <app-selected-metrics (metricClicked)="viewSideNav($event)"></app-selected-metrics>
+
+</mat-drawer-container>

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~font-awesome/css/font-awesome.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+html, body {
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 25px;
+}
+
+.mat-drawer-backdrop {
+    position: fixed !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgba(0,0,0,.1) !important;
+}
+
+/* .example-container[_ngcontent-c4]{
+    height: 100vh !important;
+}
+
+mat-card, matTab ng-star-inserted, app-side-bar {
+    min-height: 100vh !important;
+} */

@@ -1,0 +1,20 @@
+<div class="MetricsContainer">
+  <h3> Metrics </h3>
+  
+  <p> 10 metrics, 0 categories</p>
+  
+  <div class="searchContainer">
+    <button type="submit"> <i class="fa fa-search"></i> </button>
+    <input type="text" placeholder="All categories">
+  </div>
+  
+  <ul class="list-group">
+    <li class="list-group-item"
+     draggable="true"
+     *ngFor = "let metric of metrics"
+     (dragstart)="drag($event, metric)"
+     [id]="metric.id">
+     {{metric.name}}
+    </li>
+  </ul>
+</div>

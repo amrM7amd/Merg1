@@ -1,0 +1,20 @@
+.MetricsContainer {
+    padding: 10px;
+}
+p {
+    opacity: 0.5;
+    font-size: 13px;
+}
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+}
+button {
+    background-color: #ddd;
+}
+button, input {
+    padding: 7px;
+}
+button hover {
+    background: #ccc;
+}
