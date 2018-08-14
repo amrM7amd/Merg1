@@ -19,7 +19,12 @@
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .example-sidenav {
+    overflow: scroll;
     padding: 20px;
     position: fixed;
 }

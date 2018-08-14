@@ -95,7 +95,7 @@ span{
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  height: auto;
+  height: 36px;
   background-color: white;
   padding-left: 2%;
 }

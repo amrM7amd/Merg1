@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material';
 import { Router } from '@angular/router';
 
@@ -17,7 +17,8 @@ export class TabsComponent implements OnInit {
     this.setMetric = null; 
   }
 
-  ngOnInit() {
+  ngOnInit() {  
+    this.router.navigate(['filter-conditions']);
   }
 
   onDropped(metric: {id: number, name: string}) {
@@ -30,10 +31,9 @@ export class TabsComponent implements OnInit {
 
   onTabClicked(tabEvent: MatTabChangeEvent) {
     switch(tabEvent.tab.textLabel) {
-      case 'selected-metrics': this.router.navigate([tabEvent.tab.textLabel]);
-      case 'Filter conditions': this.router.navigate([tabEvent.tab.textLabel]);
+      case 'Selected metrics': this.router.navigate(['selected-metrics']);
+      case 'Filter conditions': this.router.navigate(['filter-conditions']);
     }
-    console.log(tabEvent.tab.textLabel);
   }
 
 }

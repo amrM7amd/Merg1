@@ -35,7 +35,7 @@ import { MenuComponent } from './menu/menu.component';
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'selected-metrics', component: SideBarComponent},
-      {path: 'filtered-conditions', component: SideBarComponent}
+      {path: 'filter-conditions', component: SideBarComponent}
     ])
   ],
   providers: [
