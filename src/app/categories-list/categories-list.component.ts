@@ -1,4 +1,4 @@
-import { CategoriesListService } from './../services/categories-list.service';
+import { CategoriesListService } from '../services/categories-list.service';
 import { Component, OnInit } from '@angular/core';
 import { SelectedMetricsStore } from '../common/selected-metrics.store';
 

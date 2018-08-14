@@ -9,8 +9,8 @@ import { AppComponent } from './app.component';
 import { MetricesComponent } from './metrices/metrices.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SelectedMetricsComponent } from './selected-metrics/selected-metrics.component';
-import { SelectedMetricsSelectionMenuComponent } from './selected-metrics-selection-menu/selected-metrics-selection-menu.component';
-import { SelectedMetricOptionsMenuComponent } from './selected-metric-options-menu/selected-metric-options-menu.component';
+import { DropDownComponent } from './selected-metrics/drop-down/drop-down.component';
+import { CardOptionsComponent } from './selected-metrics/card-options/card-options.component';
 import { SelectedMetricsStore } from './common/selected-metrics.store';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CategoriesListComponent } from './categories-list/categories-list.component';
@@ -22,8 +22,8 @@ import { MenuComponent } from './menu/menu.component';
     MetricesComponent,
     TabsComponent,
     SelectedMetricsComponent,
-    SelectedMetricsSelectionMenuComponent,
-    SelectedMetricOptionsMenuComponent,
+    DropDownComponent,
+    CardOptionsComponent,
     SideBarComponent,
     CategoriesListComponent,
     MenuComponent

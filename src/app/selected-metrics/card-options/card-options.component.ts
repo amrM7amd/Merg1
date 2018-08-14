@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material';
 
 @Component({
-  selector: 'selected-metric-options-menu',
-  templateUrl: './selected-metric-options-menu.component.html',
-  styleUrls: ['./selected-metric-options-menu.component.css']
+  selector: 'app-card-options',
+  templateUrl: './card-options.component.html',
+  styleUrls: ['./card-options.component.css']
 })
-export class SelectedMetricOptionsMenuComponent implements OnInit {
+export class CardOptionsComponent implements OnInit {
 
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 

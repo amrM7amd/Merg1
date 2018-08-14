@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material';
 
 @Component({
-  selector: 'selected-metrics-selection-menu',
-  templateUrl: './selected-metrics-selection-menu.component.html',
-  styleUrls: ['./selected-metrics-selection-menu.component.css']
+  selector: 'app-drop-down',
+  templateUrl: './drop-down.component.html',
+  styleUrls: ['./drop-down.component.css']
 })
-export class SelectedMetricsSelectionMenuComponent implements OnInit {
+export class DropDownComponent implements OnInit {
 
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
   private items;
